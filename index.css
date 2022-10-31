@@ -1,0 +1,80 @@
+/* Variables */
+:root{
+    --transition: 200ms;
+    --color-dark: black;
+    --color-light: white;
+    --color-secondary: grey;
+}
+
+/* Formatted */
+
+body, html {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: transparent;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+*{
+    scroll-margin-top: 75px;
+}
+
+/* Styles */
+
+/* Navbar */
+
+.navbar__container {
+    position: fixed;
+    width: 100%;
+    background-color: var(--color-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    height: 75px;
+}
+
+.navbar__icon {
+    width: 50px;
+    transform: scale(1);
+    transition: var(--transition);
+}
+
+.navbar__icon:hover {
+    transform: scale(1.05);
+}
+
+.navbar__links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar__link {
+    color: var(--color-light);
+    transition: var(--transition);
+}
+
+.navbar__link:hover {
+    color: var(--color-secondary);
+}
+
+/* Sections */
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 75px;
+}
+
+.section {
+    background-color: var(--color-secondary);
+    height: 1000px;
+}
